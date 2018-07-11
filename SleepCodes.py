@@ -21,7 +21,7 @@ def extract_data_fromEDF(EDF_file):
     channel_names=raw.ch_names    
     Fs=raw.info.get('sfreq')
     return data,channel_names,Fs
-def select_data(data,channels_names,data_to_select):
+def select_data(data=[],channels_names=None,data_to_select='EEG'):
     print('selecting {} data'.format(data_to_select))
     EEG_channel_names,EEG_index=[],[]
     EOG_channel_names,EOG_index=[],[]

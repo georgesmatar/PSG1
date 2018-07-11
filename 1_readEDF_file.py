@@ -40,7 +40,7 @@ df['Subject_id']=sub_name
 df['Number of EEG channels']=nb_ch
 df['EEG channel names']=channel_names
 df['Sampling frequency']=Fs
-#df.to_excel(path+'EDF_recap.xlsx')
+df.to_excel(path+'EDF_recap.xlsx')
 #import pyedflib as pyedf
 #file = pyedf.EdfReader(os.path.join(root,filename))  
 #annotations = file.readAnnotations()  
